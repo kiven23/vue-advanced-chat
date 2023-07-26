@@ -33,7 +33,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"serve": "vite preview",
+		"serve": "vite preview --host",
 		"clean:lib": "rm -rf dist/*.js && rm -rf dist/*.map && rm -rf dist/*.css && rm -rf dist/*.html",
 		"prepublish": "npm run lint && npm run build",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
